@@ -5,6 +5,7 @@ import ExternalIconLink from '../ExternalIconLink/ExternalIconLink'
 import './App.css';
 import Home from '../Home/Home'
 import InternalIconLink from '../InternalIconLink/InternalIconLink';
+import Resume from '../Resume/Resume';
 
 
 class App extends Component {
@@ -44,8 +45,7 @@ class App extends Component {
           </AppBar>
         
           <Route exact path="/" component={Home} />
-          {/* <Route exact path="/cosmic-match" component={CosmicMatch} /> */}
-          {/* <Route exact path="/" component={Home} /> */}
+          <Route exact path="/resume" component={Resume} />
 
         </div>
       </Router>
