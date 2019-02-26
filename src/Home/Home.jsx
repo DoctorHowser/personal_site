@@ -8,6 +8,7 @@ import {
   Divider,
   GridListTileBar,
   IconButton,
+  Paper,
   withStyles
 } from '@material-ui/core';
 import headshot from './Dane_Smith.png';
@@ -21,6 +22,8 @@ const projects = [
     url : "http://cosmicmatch.net",
     img : cm,
     featured: true,
+    subtitle: "Mobile App for Rating Compatibility",
+    info: "Developed an Astrologer's vision for an App",
     code: "https://github.com/DoctorHowser/CosmicMatchApi"
 
   }
@@ -57,6 +60,7 @@ const Home = (props) => {
   return (
     <React.Fragment>
       <Grid container spacing={16} justify="center" alignItems="center">
+      
 
         <Grid item xs={12}  >
           <Avatar className={classes.bigAvatar} src={headshot} />
@@ -80,6 +84,7 @@ const Home = (props) => {
             Work serves People, both in Product and in Practice
           </Typography>
         </Grid>
+        
         <Grid item xs="6">
           <GridList cellHeight={200} spacing={1} >
             <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
@@ -91,6 +96,7 @@ const Home = (props) => {
             <GridListTileBar
               title={tile.title}
               titlePosition="top"
+              subtitle={<span>{tile.subtitle}<br/>{tile.info}</span>}
               actionIcon={
                 <IconButton href={tile.code} target="_blank" className={classes.icon}>
                   <Code />
@@ -104,6 +110,7 @@ const Home = (props) => {
         ))}
           </GridList>
         </Grid>
+        
       </Grid>
     </React.Fragment>
   )
