@@ -73,7 +73,7 @@ const Home = (props) => {
           </Typography>
         </Grid>
         <Grid item xs={6}>
-          <Typography variant="body1">
+          <Typography variant="h5">
             Software Engineer specializing in teaching. <br/>
             Works with React, Redux, Node, Java, Spring Boot, SQL <br/>
             <br/>
