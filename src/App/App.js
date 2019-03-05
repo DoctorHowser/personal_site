@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import { AppBar, Typography, Toolbar, Avatar, MuiThemeProvider, createMuiTheme, Paper } from '@material-ui/core';
 import ExternalIconLink from '../ExternalIconLink/ExternalIconLink'
 import './App.css';
